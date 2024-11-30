@@ -1,0 +1,23 @@
+name = "game-of-life"
+version = "0.1.0"
+license = "license"
+author = "Mark Asuncion"
+maintainer = ""
+copyright = ""
+[build]
+auto-executables = true
+auto-tests = true
+auto-examples = true
+module-naming = false
+[dependencies]
+fortran-raylib = { git = "https://github.com/interkosmos/fortran-raylib.git" }
+[install]
+library = false
+[fortran]
+implicit-typing = false
+implicit-external = false
+source-form = "free"
+[[executable]]
+source-dir = "app"
+name = "game-of-life"
+main = "main.f90"
